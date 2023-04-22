@@ -1,0 +1,43 @@
+.sideContent{
+    width: 6vmax;
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+    box-shadow: 7px 0 8px -5px #9b9b9b;
+    
+}
+
+.sideIcon{
+    text-align: center;
+     color: #474747;
+     padding: 8px ;
+     transition: all 0.4s;
+    cursor: pointer;
+}
+.sideIcon h4{
+    font-size: 1vmax;
+}
+.sideIcon svg{
+    font-size: 1.5vmax;
+}
+
+.sideIcon:hover{
+    background-color: rgba(255, 166, 0, 0.857);
+    color: rgb(221, 221, 221);
+}
+
+.active{
+    background-color: rgb(246, 96, 42);
+    color: rgb(221, 221, 221);
+}
+
+.active:hover{  background-color: rgb(246, 96, 42);}
+
+
+
+@media screen and (max-width:800px) {
+    .sideContent{
+        display: none;
+    }
+    
+}

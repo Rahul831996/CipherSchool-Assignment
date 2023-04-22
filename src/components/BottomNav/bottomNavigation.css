@@ -1,0 +1,90 @@
+ 
+ .bottomNav{
+    display: none;
+ }
+ 
+ @media screen and (max-width:1100px) {
+    
+ 
+    .bottomNav{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        position: absolute;
+        top: 90%;
+       
+    }
+
+    .bottomTube{
+        display: flex;
+        width: 80vw;
+        justify-content: space-evenly;
+        position: fixed;
+        border-radius: 20px;
+        box-shadow: 0 0 10px grey;
+    }
+
+    .bottomSqaure{
+         text-align: center;
+         padding: 1vmax 1vmax;
+         border-radius: 10px;
+         
+         
+    }
+    .bottomSqaure a {
+        text-decoration: none;
+    }
+    
+    .bottomNav a,
+    .bottomNav svg{
+        font-size: 1.8vmax;
+        color: rgb(54, 54, 54);
+        
+    }
+    .bottomSqaure:hover{
+        background-color: orange;
+        color: white;
+    }
+
+    .activeBtn{
+        background-color: orangered;
+        color: white;
+    }
+    .activeBtn h4,
+    .activeBtn svg{
+        color: white;
+    }
+
+    /* Profile options */
+
+    .profileOptions{
+        width: 80vw;
+        position: absolute;
+        /* top: -820%; */
+        
+        bottom: 100%;
+        left: 0;
+        border-radius: 20px;
+        background-color: rgb(56, 53, 53);
+        
+    }
+
+    .profileOprionSelect:hover{
+        background-color: rgba(255, 166, 0, 0.847);
+    }
+
+    .profileOprionSelect{
+        color: white;
+        padding: 2vmax;
+        border-radius: 20px;
+        text-align: left;
+        display: flex;
+        gap: 2vmax;
+        align-items: center;
+        transition:ease-in-out 0.3s;
+    }
+    .profileOprionSelect svg{
+        color: white;
+        font-size: 3vmax;
+    }
+ }

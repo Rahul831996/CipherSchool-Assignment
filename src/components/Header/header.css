@@ -1,0 +1,189 @@
+.container {
+    width: 100vw;
+    background-color: rgb(207, 231, 231);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin: 0 2vmax;
+}
+
+.logoContent {
+    display: flex;
+    align-items: center;
+    gap: 0.5vmax;
+    margin: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmax;
+}
+
+.menuBar {
+    font-size: 1.5vmax;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 25px;
+    cursor: pointer;
+}
+
+.logoTitle {
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.browseContent span {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.browseOptions {
+    list-style-type: none;
+    position: absolute;
+    top: 7%;
+    font-size: 2vmin;
+    background-color: rgb(236, 234, 234);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #959494;
+    cursor: pointer;
+}
+
+.browseOptions li {
+    padding: 2px 10px;
+}
+
+.browseOptions li:hover {
+    background-color: rgb(208, 207, 207);
+}
+
+
+
+.navIcons {
+    display: flex;
+    height: inherit;
+    gap: 3vmax;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search {
+    font-size: 1.8vmax;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.search input {
+    border: none;
+    outline: none;
+    padding: 7px 5px;
+    width: 20vmax;
+    font-size: 20px;
+}
+
+.search svg {
+    margin-left: 0.8vmax;
+    margin-right: 0.8vmax;
+    font-size: 20px;
+}
+
+.navIcons p svg {
+    font-size: 30px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.search span{
+    cursor: pointer;
+}
+
+.notificationCount{
+    background-color: rgb(236, 113, 13);
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 1%;
+    margin-left: -3px;
+    width: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.navIcons img {
+    width: 40px;
+    cursor: pointer;
+}
+ 
+
+
+/* Media quariess */
+
+
+@media screen and (max-width:800px) {
+    .container{
+        width: 100vw;
+    }
+
+   .logoTitle{
+    display: none;
+   }
+
+   .search input{
+    font-size: 1.5vmax;
+    margin-left: 0vmax;
+   }
+
+   .search svg{
+    /* margin-left: 1vmax; */
+    margin-right: 1.4vmax;
+    font-size: 1.4vmax;
+   }
+   .navIcons{
+    gap: 2vmax;
+   }
+
+   .navIcons p svg {
+    font-size: 2.8vmax;
+   }
+   .notificationCount{
+    font-size: 1vmax;
+    width: 2vmax;
+    display: none;
+    position: fixed;
+   }
+   .navIcons img{
+    width: 4vmax;
+   }
+   
+}
+
+@media screen and (max-width:350px) {
+    .search input{
+         width: 12vmax;
+         padding:0.6vmax 0;
+         font-size: 1.2vmax;
+    } 
+    .search svg{
+        font-size: 1.5vmax;
+    }
+    .search{
+        width: 16vmax;
+    }
+
+}
